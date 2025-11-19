@@ -1,43 +1,60 @@
-# OnlineBookstore Management System (Eclipse Dynamic Web Project)
+A full-stack Java Web Application built using JSP/Servlets (Jakarta EE), JDBC, MySQL, HTML, CSS, Bootstrap, and deployed on Apache Tomcat 10.
+This project provides essential e-commerce functionality, including secure login, book inventory management, shopping cart handling, and order processing.
 
-Minimal, Tomcat-10 (Jakarta) compatible Java web application scaffold to host on GitHub.
+⭐ Features
+👤 User Authentication
 
-## Project layout (Eclipse Dynamic Web Project, non-Maven)
-```
-OnlineBookstore/
-├─ .project
-├─ .classpath
-├─ WebContent/
-│  ├─ index.jsp
-│  ├─ css/
-│  └─ WEB-INF/
-│     ├─ web.xml
-│     └─ views/
-│         ├─ header.jsp
-│         └─ footer.jsp
-├─ src/
-│  └─ com/vcube/
-│     ├─ handlers/      (servlets — renamed from controller)
-│     ├─ repository/    (DAO layer — renamed from dao)
-│     ├─ models/        (DTOs — renamed from dto)
-│     └─ helpers/       (utilities — renamed from util)
-└─ sql/
-   └─ bookstore.sql
-```
+Secure login using Servlet sessions
 
-## Package renames requested
-- `controller` -> `handlers`
-- `dao` -> `repository`
-- `dto` -> `models`
-- `util` -> `helpers`
+Separate flows for Admin and Users
 
-## How to run
-1. Import this folder as an *Existing Dynamic Web Project* in Eclipse.
-2. Add a Tomcat-10 runtime (Tomcat 10 uses Jakarta namespace).
-3. Create a MySQL database and run `sql/bookstore.sql`.
-4. Update DB credentials in `src/com/vcube/helpers/DBConnection.java`.
-5. Run on server.
+📚 Book Management (Admin)
 
-## GitHub
-If you want I can push this to a new repository; provide the repo name and I will give you the git commands.
+Add new books
+
+Update/manage stock
+
+View complete list of books
+
+🛒 User Cart & Order Processing
+
+Add books to cart
+
+View cart
+
+Checkout using SQL transactions
+
+Order creation with database integrity
+
+⚙️ Backend Architecture
+
+MVC pattern
+
+DAO → repository
+
+DTO → models
+
+Controllers → handlers
+
+Utility classes → helpers
+
+Clean modular package structure
+
+🚀 Scalability Ready
+
+Future enhancements prepared for:
+
+Payment gateway integration
+
+Book recommendation engine
+
+REST APIs for mobile apps
+
+| Layer    | Technology                    |
+| -------- | ----------------------------- |
+| Frontend | HTML, CSS, Bootstrap, JSP     |
+| Backend  | Java (Jakarta Servlets), JDBC |
+| Database | MySQL                         |
+| Server   | Apache Tomcat 10              |
+| Pattern  | MVC + Repository Pattern      |
 
